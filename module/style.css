@@ -1,0 +1,57 @@
+#loading-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20000;
+    background: #fff;
+    cursor: pointer;
+    visibility: visible;
+    /**透明度 hack**/
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+
+}
+
+#loading {
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    padding: 2px;
+    z-index: 20001;
+    height: auto;
+}
+
+#loading img {
+    margin-bottom: 5px;
+}
+
+#loading .loading-indicator {
+    background: white;
+    color: #555;
+    font: bold 13px tahoma, arial, helvetica;
+    padding: 10px;
+    margin: 0px auto;
+    text-align: center;
+    height: auto;
+     border: 1px solid #339999;
+}
+
+.loadingtext {
+    background-image: url("./images/loading-balls.gif") !important;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding-left: 60px;
+    float: left;
+}
+
+.loadingerror {
+    background-image: url("./images/error.gif") !important;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    padding-left: 20px;
+    float: left;
+}
